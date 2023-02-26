@@ -1,0 +1,51 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #080000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.font {
+  font-family: raleway;
+  width: 145px;
+  height: 31px;
+  top: 24p;
+  left: 145px;
+}
+
+.link:hover {
+  color: deepskyblue;
+}
+
+.buton {
+  color: #080000;
+}
+
+.secondbox {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+  top: 80px;
+  left: -4px;
+}
+
+.boton {
+  background-color: #2196f3;
+}
+
+.letra {
+  color: #ffffff;
+}
+.shadow {
+  background-color: #f5f4fa;
+}
+
+ul {
+  list-style: none;
+}
+
+

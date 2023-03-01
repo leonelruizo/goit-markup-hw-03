@@ -1,5 +1,10 @@
 :root {
   --container-padding: calc((100% - 1200px) / 2);
+  --primary-black-color:#212121;
+  --primary-text-color:#757575;
+  --primary-white-color:#ffffff;
+  --accent-color:#2196f3;
+  --backgroundark:#2f303a;
 }
 * {
   margin: 0;
@@ -8,7 +13,7 @@
 }
 body {
   font-family: 'Roboto', 'arial', sans-serif;
-  color: #ffffff;
+  color: var(--primary-white-color);;
   background-color: #e5e5e5;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -36,7 +41,7 @@ li {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  color: #2196f3;
+  color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -48,7 +53,7 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color)
 }
 
 .headers {
@@ -57,7 +62,7 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-black-color);
 }
 
 .headers:hover,
@@ -65,7 +70,7 @@ li {
 .headers .current,
 .item:hover,
 .item:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .item {
@@ -74,7 +79,7 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);;
 }
 
 .header-container {
@@ -99,7 +104,7 @@ li {
 }
 
 .hero {
-  background: #2f303a;
+  background: var(--backgroundark);;
   padding: 200px var(--container-padding);
   text-align: center;
 }
@@ -110,7 +115,7 @@ li {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--primary-white-color);;
   width: 696px;
   margin: 20px auto;
 }
@@ -120,8 +125,8 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primary-white-color);;
+  background-color: var(--accent-color);
   padding: 10px 32px;
 }
 
@@ -133,7 +138,7 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--primary-black-color);
 }
 
 .benefits-parraf {
@@ -141,11 +146,8 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .benefits-list {
@@ -165,7 +167,7 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-black-color);
   margin-bottom: 50px;
 }
 
@@ -185,17 +187,19 @@ li {
 
 .albun-item {
   flex-basis: calc((100% - 120px) / 4);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--backgroundark);;
   padding: 94px var(--container-padding);
 }
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  color: #2196f3;
+  color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -208,7 +212,7 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--primary-white-color);;
 }
 
 .contact {
@@ -221,5 +225,102 @@ li {
 
 .contact:hover,
 .contact:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.portafolio-buton {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.imagen-list {
+  flex-basis: calc((100% - 90px) / 3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.title-card {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-black-color);
+}
+
+.parraf-card {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.staff {
+  padding: 20px 24px;
+}
+
+.team-names {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
+}
+
+.team-parraf {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);;
+}
+
+.buton {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+
+  color: var(--primary-black-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.butons {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--primary-white-color);;
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background-color: var(--accent-color);
 }
